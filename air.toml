@@ -6,4 +6,4 @@ tmp_dir = "tmp"
     cmd = "go build -o {{.Output}} {{.Input}}"
     exclude = ["tmp/*","client/*",".git/*"]
     include = ["**/*.go"]
-    ignore = ["tmp/*",".git/*"]
+    ignore = ["tmp/*",".git/*","client/*"]

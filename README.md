@@ -54,3 +54,9 @@ func main() {
 ```sh
 mongodb+srv://<username>:<password>@cluster0.oeursta.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 ```
+
+# Client vite react app
+from start
+```sh
+npm create vite@latest client
+```
