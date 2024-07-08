@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Container, Stack } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
-function App() {
-  const [count, setCount] = useState(0)
+export const BASE_URL =
+  import.meta.env.MODE === "development" ? "http://localhost:3000/api" : "/api";
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export function confirmInput() {
+  const confirmvalue = "lenoben";
+  const userInput = prompt("Enter confirmation key:");
+  if (userInput === confirmvalue) {
+    return true;
+  } else {
+    alert("confirmation key is the github username");
+    return false;
+  }
 }
 
-export default App
+function App() {
+  return (
+    <Stack h="100vh">
+      <Navbar />
+      <Container maxW={"900px"}>
+        <TodoForm />
+        <TodoList />
+      </Container>
+    </Stack>
+  );
+}
+
+export default App;
