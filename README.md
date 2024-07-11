@@ -59,4 +59,9 @@ mongodb+srv://<username>:<password>@cluster0.oeursta.mongodb.net/?retryWrites=tr
 from start
 ```sh
 npm create vite@latest client
+cd client
+npm install
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion #charka-ui
+npm i react-icons #icons
+npm i @tanstack/react-query #for effective query in react
 ```
