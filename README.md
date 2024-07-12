@@ -65,3 +65,9 @@ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion #charka-ui
 npm i react-icons #icons
 npm i @tanstack/react-query #for effective query in react
 ```
+
+# Production build
+```sh
+go build -tags netgo -ldflags '-s -w' -o app
+./app
+```
