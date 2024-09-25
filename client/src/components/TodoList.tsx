@@ -40,7 +40,7 @@ const TodoList = () => {
         bgClip="text"
       >
         <a href="https://github.com/lenoben" target="_blank">
-          <div className="animate-size">
+          <div className="animate-size box">
             <FaGithub size={50} />
           </div>
         </a>{" "}
@@ -56,7 +56,6 @@ const TodoList = () => {
           <Text fontSize={"xl"} textAlign={"center"} color={"gray.500"}>
             All tasks completed! 🤞
           </Text>
-          <img src="/go.png" alt="Go logo" width={70} height={70} />
         </Stack>
       )}
       <div className="list-contain">

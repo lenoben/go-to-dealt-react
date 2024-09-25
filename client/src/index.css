@@ -11,7 +11,7 @@
 }
 
 .list-contain {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 .animated-component {
@@ -32,6 +32,70 @@
   display: inline-block;
   color: white;
   animation: enlarge-shrink 2s infinite;
+}
+
+.box {
+  position: relative;
+  top: 20px;
+  border: solid #787877;
+  border-width: 1px;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: rebeccapurple;
+}
+
+.card {
+  /* box-shadow: -10px 10px 50px -1px rgba(0, 0, 0, 0.1),
+    10px -10px 50px -1px rgba(0, 0, 0, 0.1); */
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px;
+  border-color: #787877;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rebeccapurple;
+}
+
+.logo-card {
+  padding: 4px;
+  border-radius: 1rem;
+  border: solid 1px;
+  border-color: #787877;
+  color: rebeccapurple;
+}
+
+.p {
+  padding: 0.5rem;
+}
+
+.yellow {
+  background-color: #f6fa01;
+}
+
+.green {
+  background-color: rgb(26, 247, 18);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.name-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.name-task {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.box:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes shake-bounce {
@@ -57,9 +121,9 @@
 @keyframes enlarge-shrink {
   0%,
   100% {
-    transform: scale(1);
+    transform: scale(0.8);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }

@@ -54,6 +54,8 @@ const TodoForm = () => {
       <Flex gap={2}>
         <Input
           type="text"
+          variant="flushed"
+          placeholder="Add Task..."
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
           ref={(input) => input && input.focus()}
