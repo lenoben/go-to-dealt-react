@@ -12,6 +12,7 @@
 
 .list-contain {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .animated-component {
@@ -57,6 +58,14 @@
 .card:hover {
   transform: translateY(-3px);
   border-color: rebeccapurple;
+}
+
+.link {
+  color: inherit;
+}
+
+.link:hover {
+  color: rebeccapurple;
 }
 
 .logo-card {

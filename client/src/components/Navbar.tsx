@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <Container maxW={"900px"}>
-      <Box my={4} borderRadius={"5"}>
+      <Box my={4} borderRadius={"5"} p={2}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           {/* LEFT SIDE */}
           <Flex
@@ -24,12 +24,20 @@ export default function Navbar() {
             gap={3}
             display={{ base: "none", sm: "flex" }}
           >
-            <Text fontSize={"xx-large"} as="b">
-              Tasks to be dealt with
-            </Text>
-            {/* <div className="animated-component">
-              Shaking and Bouncing Component
-            </div> */}
+            <Flex direction="column">
+              <Text fontSize={"xx-large"} as="b">
+                Tasks to be dealt with
+              </Text>
+              <Text fontSize={"medium"} as="i">
+                <a
+                  href="https://github.com/lenoben"
+                  target="_blank"
+                  className="link"
+                >
+                  Github.com/lenoben
+                </a>
+              </Text>
+            </Flex>
           </Flex>
 
           {/* RIGHT SIDE */}

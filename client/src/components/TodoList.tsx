@@ -39,7 +39,7 @@ const TodoList = () => {
         bgGradient="linear(to-l, #0b85f8, #00ffff)"
         bgClip="text"
       >
-        <a href="https://github.com/lenoben" target="_blank">
+        <a href="https://github.com/lenoben/go-to-dealt-react" target="_blank">
           <div className="animate-size box">
             <FaGithub size={50} />
           </div>
