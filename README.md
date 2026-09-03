@@ -1,20 +1,26 @@
 # Download dependencies
+
 ```sh
 go mod download
 go mod tidy
 ```
+
 # For go reload
+
 ```sh
 go install github.com/air-verse/air@latest
 ```
 
 # To initialize a new go project
+
 ```sh
 go mod init github.com/<username>/<repo_name>
 ```
+
 use `go get <package>` to download dependency
 
 ## sample go+mongo code
+
 ```go
 
 import (
@@ -56,7 +62,9 @@ mongodb+srv://<username>:<password>@cluster0.oeursta.mongodb.net/?retryWrites=tr
 ```
 
 # Client vite react app
+
 from start
+
 ```sh
 npm create vite@latest client
 cd client
@@ -67,7 +75,26 @@ npm i @tanstack/react-query #for effective query in react
 ```
 
 # Production build
+
 ```sh
 go build -tags netgo -ldflags '-s -w' -o app
 ./app
+```
+
+# Development Build
+
+```sh
+# Set up the client
+cd client
+npm i; npm run dev
+
+# set up the go backend
+go run main.go
+```
+
+# Pushing to Git
+
+```sh
+cd client
+npm run build
 ```
